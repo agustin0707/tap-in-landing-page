@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tap In — La plataforma del ecosistema escolar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════ -->
+  <div class="nav-shield" aria-hidden="true"></div>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Tap In — inicio">
+        <img src="img/wordmark_tapin.svg" alt="tap in" class="nav-wordmark" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#colegios">Colegios</a></li>
+        <li class="btn-nav-mobile-wrap"><a href="#contacto" class="btn-nav-mobile">Agenda una demo gratis</a></li>
+      </ul>
+      <a href="#contacto" class="btn-nav">
+        <span>Agenda una demo gratis</span>
+        <svg class="btn-nav-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Dark canvas wrapper — hero + problema share one continuous background -->
+  <div class="dark-canvas">
+
+  <!-- ═══════════════════════════════════════════
+       DARK REGION (top) — single continuous dark surface
+       wrapping hero, problema, productos so there are no
+       per-section bg seams between them.
+  ════════════════════════════════════════════ -->
+  <div class="bg-dark-stack">
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-orb hero-orb--3"></div>
+      <div class="hero-noise"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="hero-kicker">Usado por +8 colegios en Chile</span>
+        <h1 class="hero-headline">
+          <span class="hl-light">Todo lo que tu colegio<br />
+          necesita, en </span><em>un solo lugar</em>
+        </h1>
+        <p class="hero-subhead">
+          Alimentación, transporte, pagos y comunicaciones en <strong>una sola plataforma</strong>.
+          Control total para directivos, <strong>visibilidad total</strong> para apoderados.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn-primary">Agenda una demo gratis</a>
+          <a href="#como-funciona" class="btn-ghost">Ver cómo funciona</a>
+        </div>
+        <div class="hero-logos">
+          <span class="logos-label">Ya confían en Tap In</span>
+          <div class="logos-carousel">
+            <div class="logos-track">
+              <img src="img/logo_colegio_mariano.svg" alt="Colegio Mariano de Schönstatt" class="brand-logo" />
+              <img src="img/logo_uc.svg" alt="Universidad Católica" class="brand-logo" />
+              <img src="img/logo_duoc.svg" alt="Duoc UC" class="brand-logo" />
+              <img src="img/logo_colegio_johnandrews.svg" alt="Colegio John Andrews" class="brand-logo" />
+              <img src="img/logo_colegio_manquehue.svg" alt="Colegio Manquehue" class="brand-logo" />
+              <img src="img/logo_colegio_losalerces.svg" alt="Colegio Los Alerces" class="brand-logo" />
+              <img src="img/logo_colegio_huinganal.svg" alt="Colegio Huinganal" class="brand-logo" />
+              <img src="img/logo_colegio_saintdominic.svg" alt="Colegio Saint Dominic" class="brand-logo" />
+              <!-- Duplicado para loop infinito -->
+              <img src="img/logo_colegio_mariano.svg" alt="" class="brand-logo" aria-hidden="true" />
+              <img src="img/logo_uc.svg" alt="" class="brand-logo" aria-hidden="true" />
+              <img src="img/logo_duoc.svg" alt="" class="brand-logo" aria-hidden="true" />
+              <img src="img/logo_colegio_johnandrews.svg" alt="" class="brand-logo" aria-hidden="true" />
+              <img src="img/logo_colegio_manquehue.svg" alt="" class="brand-logo" aria-hidden="true" />
+              <img src="img/logo_colegio_losalerces.svg" alt="" class="brand-logo" aria-hidden="true" />
+              <img src="img/logo_colegio_huinganal.svg" alt="" class="brand-logo" aria-hidden="true" />
+              <img src="img/logo_colegio_saintdominic.svg" alt="" class="brand-logo" aria-hidden="true" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-stack">
+          <!-- Glow behind the stack -->
+          <div class="stack-glow"></div>
+
+          <!-- LAYER 1 — Dashboard institucional (back) -->
+          <div class="stack-layer stack-layer--back">
+            <div class="layer-card layer-dashboard">
+              <div class="lc-header">
+                <div class="lc-dots"><span></span><span></span><span></span></div>
+                <span class="lc-title">Dashboard · Colegio Mariano</span>
+              </div>
+              <div class="lc-kpis">
+                <div class="lc-kpi">
+                  <span class="lc-kpi-num">138</span>
+                  <span class="lc-kpi-label">Tickets hoy</span>
+                </div>
+                <div class="lc-kpi">
+                  <span class="lc-kpi-num">28</span>
+                  <span class="lc-kpi-label">Rutas activas</span>
+                </div>
+                <div class="lc-kpi">
+                  <span class="lc-kpi-num">$1.2M</span>
+                  <span class="lc-kpi-label">Recaudado</span>
+                </div>
+              </div>
+              <div class="lc-bars">
+                <div class="lc-bar-row">
+                  <span>Alimentación</span>
+                  <div class="lc-bar-track"><div class="lc-bar-fill" style="width:78%"></div></div>
+                  <span>78%</span>
+                </div>
+                <div class="lc-bar-row">
+                  <span>Transporte</span>
+                  <div class="lc-bar-track"><div class="lc-bar-fill lc-bar-fill--mid" style="width:91%"></div></div>
+                  <span>91%</span>
+                </div>
+                <div class="lc-bar-row">
+                  <span>Colecta CPA</span>
+                  <div class="lc-bar-track"><div class="lc-bar-fill lc-bar-fill--deep" style="width:64%"></div></div>
+                  <span>64%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LAYER 2 — App del apoderado (middle) -->
+          <div class="stack-layer stack-layer--mid">
+            <div class="layer-card layer-app">
+              <div class="app-card-header">
+                <div class="app-avatar">SM</div>
+                <div class="app-greeting-block">
+                  <span class="app-hello">Hola, Sofía 👋</span>
+                  <span class="app-school">Colegio Mariano de Schönstatt</span>
+                </div>
+              </div>
+              <div class="app-balance-row">
+                <div class="app-balance">
+                  <span class="app-balance-label">Saldo disponible</span>
+                  <span class="app-balance-num">$24.500</span>
+                </div>
+                <div class="app-balance-btn">Recargar</div>
+              </div>
+              <div class="app-services">
+                <div class="app-service">
+                  <div class="app-service-icon as-food">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M4 4v8M8 3v10M12 4v8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  </div>
+                  <span>Casino</span>
+                </div>
+                <div class="app-service">
+                  <div class="app-service-icon as-bus">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="9" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="5" cy="13" r="1" fill="currentColor"/><circle cx="11" cy="13" r="1" fill="currentColor"/></svg>
+                  </div>
+                  <span>Transporte</span>
+                </div>
+                <div class="app-service">
+                  <div class="app-service-icon as-event">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="11" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M2 7h12M5 1v4M11 1v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  </div>
+                  <span>Eventos</span>
+                </div>
+                <div class="app-service">
+                  <div class="app-service-icon as-pay">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1v14M4.5 4C4.5 3 5.5 2 8 2s3.5 1 3.5 2.5S9.5 7 8 7.5 4.5 8.5 4.5 10.5 5.5 14 8 14s3.5-1 3.5-2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  </div>
+                  <span>Pagos</span>
+                </div>
+              </div>
+              <div class="app-activity">
+                <span class="app-activity-title">Actividad reciente</span>
+                <div class="app-activity-item">
+                  <div class="app-act-dot app-act-dot--green"></div>
+                  <span class="app-act-text">Almuerzo · Sofía</span>
+                  <span class="app-act-time">12:34 PM</span>
+                </div>
+                <div class="app-activity-item">
+                  <div class="app-act-dot app-act-dot--blue"></div>
+                  <span class="app-act-text">Ruta mañana confirmada</span>
+                  <span class="app-act-time">07:45 AM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LAYER 3 — Notification push (front) -->
+          <div class="stack-layer stack-layer--front">
+            <div class="layer-card layer-notif">
+              <div class="notif-icon-wrap">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9L7.5 13.5L15 4.5" stroke="#6B5CE7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="notif-content">
+                <strong>Sofía almorzó hoy</strong>
+                <span>Casino · 12:34 PM · Menú del día</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connection lines between layers -->
+          <svg class="stack-connectors" width="480" height="500" viewBox="0 0 480 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="connector-line connector-line--1" d="M380 80 Q300 200 120 400" stroke="url(#connGrad1)" stroke-width="1" stroke-dasharray="4 6" opacity=".3"/>
+            <path class="connector-line connector-line--2" d="M420 160 Q340 280 160 420" stroke="url(#connGrad2)" stroke-width="1" stroke-dasharray="4 6" opacity=".2"/>
+            <defs>
+              <linearGradient id="connGrad1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#9B8EF0" stop-opacity="0"/>
+                <stop offset="40%" stop-color="#9B8EF0" stop-opacity="1"/>
+                <stop offset="60%" stop-color="#6B5CE7" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#6B5CE7" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="connGrad2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#6B5CE7" stop-opacity="0"/>
+                <stop offset="50%" stop-color="#6B5CE7" stop-opacity=".8"/>
+                <stop offset="100%" stop-color="#4A3CAE" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <!-- Flowing data dots along the connection lines -->
+          <div class="flow-dots">
+            <div class="flow-dot flow-dot--1"></div>
+            <div class="flow-dot flow-dot--2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROBLEMA
+  ════════════════════════════════════════════ -->
+  <section class="section-problema" id="problema">
+    <!-- Background depth elements -->
+    <div class="problema-bg">
+      <div class="problema-orb problema-orb--1"></div>
+      <div class="problema-orb problema-orb--2"></div>
+      <div class="problema-orb problema-orb--3"></div>
+      <div class="problema-noise"></div>
+      <!-- Subtle grid pattern -->
+      <div class="problema-grid-pattern"></div>
+      <!-- Floating particles -->
+      <div class="problema-particles">
+        <div class="p-particle p-particle--1"></div>
+        <div class="p-particle p-particle--2"></div>
+        <div class="p-particle p-particle--3"></div>
+        <div class="p-particle p-particle--4"></div>
+        <div class="p-particle p-particle--5"></div>
+        <div class="p-particle p-particle--6"></div>
+        <div class="p-particle p-particle--7"></div>
+        <div class="p-particle p-particle--8"></div>
+      </div>
+    </div>
+    <!-- Transition gradient to productos -->
+    <div class="problema-fade-bottom"></div>
+    <div class="container">
+      <!-- Header — centered, smaller than hero -->
+      <div class="problema-header">
+        <span class="section-kicker">El problema</span>
+        <h2 class="problema-title">
+          <span class="problema-title-light">Cinco apps. Cero visibilidad</span><br /><em class="hl">Un solo día de colegio</em>
+        </h2>
+        <p class="problema-sub">
+          Una app para el casino, otra para el transporte, un grupo de WhatsApp para cada cosa.
+          Y el apoderado <strong>sin saber si su hijo almorzó</strong>.
+        </p>
+      </div>
+
+      <!-- White rounded card -->
+      <div class="problema-card">
+        <!-- Subtle sparkle accents -->
+        <div class="card-sparkles">
+          <div class="sparkle sparkle--1"></div>
+          <div class="sparkle sparkle--2"></div>
+          <div class="sparkle sparkle--3"></div>
+          <div class="sparkle sparkle--4"></div>
+        </div>
+        <div class="problema-card-left">
+          <div class="chaos-grid">
+            <div class="chaos-item chaos-item--1">
+              <div class="chaos-icon ci--app">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7 2v4M10 2v6M13 2v4M3 10h14M5 14h2M9 14h2M13 14h2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              </div>
+              <span>App casino</span>
+            </div>
+            <div class="chaos-item chaos-item--2">
+              <div class="chaos-icon ci--bus">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="11" rx="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M3 10h14" stroke="currentColor" stroke-width="1.4"/><circle cx="6.5" cy="16" r="1.2" stroke="currentColor" stroke-width="1.2"/><circle cx="13.5" cy="16" r="1.2" stroke="currentColor" stroke-width="1.2"/></svg>
+              </div>
+              <span>App transporte</span>
+            </div>
+            <div class="chaos-item chaos-item--3">
+              <div class="chaos-icon ci--wsp">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2a8 8 0 0 1 8 8 8 8 0 0 1-1.2 4.2L18 18l-3.8-1.2A8 8 0 1 1 10 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M7 9h6M7 12h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              </div>
+              <span>WhatsApp</span>
+            </div>
+            <div class="chaos-item chaos-item--4">
+              <div class="chaos-icon ci--sheet">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="2" width="14" height="16" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M7 6h6M7 9.5h6M7 13h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              </div>
+              <span>Planillas</span>
+            </div>
+            <div class="chaos-item chaos-item--5">
+              <div class="chaos-icon ci--mail">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M2 6l8 5 8-5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              </div>
+              <span>Email circular</span>
+            </div>
+            <div class="chaos-item chaos-item--6">
+              <div class="chaos-icon ci--cash">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.4"/><path d="M10 5.5v9M7.5 7.5c0-1 1-1.8 2.5-1.8s2.5.8 2.5 2c0 1.5-2.5 1.5-2.5 3 0 1 1 1.8 2.5 1.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              </div>
+              <span>Pago presencial</span>
+            </div>
+          </div>
+          </div><!-- /.problema-card-left -->
+
+          <!-- Arrow divider — chaos becomes order -->
+          <div class="problema-card-divider">
+            <div class="divider-arrow">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10h12M12 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="problema-card-right">
+            <div class="solution-block">
+              <div class="solution-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span class="solution-logo">tap in</span>
+              <span class="solution-label">Todo centralizado.<br />Todo visible. Todo simple.</span>
+              <div class="solution-features">
+                <span class="sol-feat">
+                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Centralizado
+                </span>
+                <span class="sol-feat">
+                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Tiempo real
+                </span>
+                <span class="sol-feat">
+                  <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Sin fricción
+                </span>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.problema-card -->
+      </div><!-- /.container -->
+  </section>
+
+  </div><!-- /.bg-dark-stack (top) -->
+
+  <!-- ═══════════════════════════════════════════
+       PRODUCTOS
+  ════════════════════════════════════════════ -->
+  <section class="section-productos" id="productos" data-scroll="center">
+    <!-- Background effects -->
+    <div class="productos-bg">
+      <div class="productos-orb productos-orb--1"></div>
+      <div class="productos-orb productos-orb--2"></div>
+      <div class="productos-orb productos-orb--3"></div>
+      <div class="productos-orb productos-orb--4"></div>
+      <!-- Slow rotating conic sweep -->
+      <div class="productos-sweep"></div>
+      <!-- Diagonal aurora rays -->
+      <div class="productos-ray productos-ray--1"></div>
+      <div class="productos-ray productos-ray--2"></div>
+      <div class="productos-ray productos-ray--3"></div>
+      <!-- Floating star field -->
+      <div class="productos-stars">
+        <span class="prod-star prod-star--1"></span>
+        <span class="prod-star prod-star--2"></span>
+        <span class="prod-star prod-star--3"></span>
+        <span class="prod-star prod-star--4"></span>
+        <span class="prod-star prod-star--5"></span>
+        <span class="prod-star prod-star--6"></span>
+        <span class="prod-star prod-star--7"></span>
+        <span class="prod-star prod-star--8"></span>
+        <span class="prod-star prod-star--9"></span>
+        <span class="prod-star prod-star--10"></span>
+        <span class="prod-star prod-star--11"></span>
+        <span class="prod-star prod-star--12"></span>
+      </div>
+      <!-- Soft dot lattice that breathes (kept, masked tighter) -->
+      <div class="productos-lattice"></div>
+    </div>
+    <div class="productos-divider-top"></div>
+
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-kicker">El ecosistema</span>
+        <h2 class="section-title">Un ecosistema,<br /><em class="hl">tres soluciones</em></h2>
+      </div>
+
+      <!-- ═══ PRODUCT PILLS ROW ═══ -->
+      <div class="product-pills">
+
+        <!-- CONNECT — Large pill (highlighted) -->
+        <div class="pill pill--connect" data-tilt data-pill="connect">
+          <div class="pill-glow"></div>
+          <div class="pill-border pill-border--connect"></div>
+          <div class="card-spotlight"></div>
+          <div class="pill-inner pill-inner--connect">
+            <div class="pill-content">
+              <div class="pill-top-row pill-top-row--split">
+                <img src="img/logo_tapin_connect.svg" alt="Tap In Connect" class="pill-logo pill-logo--lg" />
+                <span class="featured-badge">
+                  <span class="featured-badge-dot"></span>
+                  Producto estrella
+                </span>
+              </div>
+              <h3 class="pill-headline pill-headline--connect"><strong>Todo tu colegio.</strong><br /><em>Una app.</em></h3>
+              <p class="pill-desc">
+                Casino, transporte, eventos y pagos en un solo lugar.
+              </p>
+            </div>
+            <!-- Mockup: Wide dashboard feed — value prop = "everything happening in one app" -->
+            <div class="pill-mockup pill-mockup--connect" data-anim="mockup">
+              <div class="connect-mockup">
+                <div class="connect-phone">
+                  <div class="connect-phone-body">
+                    <div class="connect-phone-header">
+                      <div class="connect-phone-avatar">CG</div>
+                      <div class="connect-phone-greet">
+                        <span class="connect-phone-greet-label">Hola,</span>
+                        <strong class="connect-phone-greet-name">Camila García</strong>
+                      </div>
+                      <span class="connect-phone-bell" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 8a6 6 0 1112 0c0 4 2 5 2 7H4c0-2 2-3 2-7zM10 20a2 2 0 004 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span class="connect-phone-bell-dot"></span>
+                      </span>
+                    </div>
+
+                    <!-- Hero card: most prominent activity -->
+                    <div class="connect-feed-hero connect-feed-card--casino" data-anim="feed-1">
+                      <div class="connect-feed-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 12h18M6 6v12M12 4v16M18 6v12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                      </div>
+                      <div class="connect-feed-text">
+                        <strong>Sofía almorzó en el casino</strong>
+                        <span>Hoy · 12:34</span>
+                      </div>
+                      <span class="connect-feed-check">
+                        <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M2 8l5 5L14 3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </span>
+                    </div>
+
+                    <!-- Bottom row: 2 secondary cards side by side -->
+                    <div class="connect-feed-row">
+                      <div class="connect-feed-card connect-feed-card--transport" data-anim="feed-2">
+                        <div class="connect-feed-icon">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="13" rx="3" stroke="currentColor" stroke-width="1.6"/><circle cx="7.5" cy="19" r="1.4" fill="currentColor"/><circle cx="16.5" cy="19" r="1.4" fill="currentColor"/></svg>
+                        </div>
+                        <div class="connect-feed-text">
+                          <strong>Bus 3 · 7:42</strong>
+                          <span>En camino</span>
+                        </div>
+                        <span class="connect-feed-live"></span>
+                      </div>
+                      <div class="connect-feed-card connect-feed-card--event" data-anim="feed-3">
+                        <div class="connect-feed-icon">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M3 10h18M7 2v4M17 2v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                        </div>
+                        <div class="connect-feed-text">
+                          <strong>Reunión</strong>
+                          <span>Mar 12 · 18:00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#contacto" class="btn-primary pill-cta pill-cta--wide">Agenda una demo</a>
+          </div>
+        </div>
+
+        <!-- CAMPUS — Medium pill (neutral) -->
+        <div class="pill pill--campus" data-tilt data-pill="campus">
+          <div class="pill-glow"></div>
+          <div class="pill-border"></div>
+          <div class="card-spotlight"></div>
+          <div class="pill-inner">
+            <div class="pill-content">
+              <div class="pill-top-row pill-top-row--split">
+                <img src="img/logo_tapin_campus.svg" alt="Tap In Campus" class="pill-logo pill-logo--lg" />
+                <span class="meta-chip">Pide y retira</span>
+              </div>
+              <h3 class="pill-headline"><strong>Almuerzo resuelto.</strong><br /><em>Sin filas.</em></h3>
+              <p class="pill-desc">
+                Pide tu comida en el campus y retírala sin esperas.
+              </p>
+            </div>
+            <!-- Mockup: Real Tap In Campus app — offers grid + map -->
+            <div class="pill-mockup pill-mockup--campus" data-anim="mockup">
+              <div class="campus-mockup">
+                <div class="campus-phone">
+                  <div class="campus-phone-statusbar">
+                    <span class="campus-status-time">9:41</span>
+                    <div class="campus-status-icons">
+                      <svg width="11" height="8" viewBox="0 0 11 8" fill="currentColor"><rect x="0" y="5" width="2" height="3" rx=".5"/><rect x="3" y="3" width="2" height="5" rx=".5"/><rect x="6" y="1" width="2" height="7" rx=".5"/><rect x="9" y="0" width="2" height="8" rx=".5" opacity=".4"/></svg>
+                      <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><rect x="0" y="3" width="10" height="3" rx=".5" fill="currentColor"/><rect x="0" y="0" width="10" height="6" rx=".5" stroke="currentColor" fill="none" opacity=".5"/></svg>
+                    </div>
+                  </div>
+                  <div class="campus-app-bar">
+                    <span class="campus-app-brand">
+                      <img src="img/isotipo_campus.svg" alt="" class="campus-app-iso" />
+                      <span class="campus-app-name">Campus</span>
+                    </span>
+                    <span class="campus-app-menu">
+                      <span></span><span></span><span></span>
+                    </span>
+                  </div>
+                  <div class="campus-phone-body">
+                    <div class="campus-offers" data-anim="ticket-1">
+                      <div class="campus-offer campus-offer--pizza">
+                        <div class="campus-offer-icon">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2 L17.5 16 Q10 19 2.5 16 Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="8" cy="11" r="1" stroke="currentColor" stroke-width="1.2"/><circle cx="12" cy="10.5" r="1" stroke="currentColor" stroke-width="1.2"/><circle cx="10" cy="14" r="1" stroke="currentColor" stroke-width="1.2"/></svg>
+                        </div>
+                        <span class="campus-offer-label"><strong>10%</strong><em>Copper</em></span>
+                      </div>
+                      <div class="campus-offer campus-offer--burger">
+                        <div class="campus-offer-icon">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 9 Q10 3 17 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M3 9 H17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M3.5 12 Q5 11 6.5 12 Q8 13 9.5 12 Q11 11 12.5 12 Q14 13 15.5 12 Q16.7 11.2 16.5 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M3 15 Q10 18 17 15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                        </div>
+                        <span class="campus-offer-label"><strong>15%</strong><em>la Burga</em></span>
+                      </div>
+                      <div class="campus-offer campus-offer--coffee">
+                        <div class="campus-offer-icon">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M9 3 Q7.5 4.5 9 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M11 2.5 Q9.5 4 11 5.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M4 8 H14 L13 16 Q13 17.5 11.5 17.5 H6.5 Q5 17.5 5 16 Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M14 10 Q17 10 17 12.5 Q17 15 14 15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                        </div>
+                        <span class="campus-offer-label"><strong>$4.8k</strong><em>Starbucks</em></span>
+                      </div>
+                    </div>
+                    <div class="campus-map" data-anim="balance">
+                      <svg class="campus-map-svg" viewBox="0 0 200 60" preserveAspectRatio="xMidYMid slice" fill="none">
+                        <path class="campus-map-path" d="M14 38 Q 60 26 100 32 Q 145 38 188 22" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="2 4" opacity=".55"/>
+                        <circle class="campus-map-dot campus-map-dot--a" cx="36" cy="36" r="2.4" fill="currentColor" opacity=".65"/>
+                        <circle class="campus-map-dot campus-map-dot--b" cx="100" cy="32" r="2.4" fill="currentColor" opacity=".65"/>
+                        <circle class="campus-map-dot campus-map-dot--c" cx="170" cy="24" r="2.6" fill="currentColor" opacity=".9"/>
+                        <circle class="campus-map-pulse" cx="170" cy="24" r="3" fill="none" stroke="currentColor" stroke-width="1" opacity=".5"/>
+                      </svg>
+                      <span class="campus-map-chip">
+                        <svg width="10" height="10" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 18s5.5-6 5.5-10a5.5 5.5 0 10-11 0c0 4 5.5 10 5.5 10z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="8" r="1.8" stroke="currentColor" stroke-width="1.4"/></svg>
+                        Mapa del campus
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#contacto" class="pill-cta-link campus-cta-link">
+              Conocer más
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- HEALTH — Small pill -->
+        <div class="pill pill--health" data-tilt data-pill="health">
+          <div class="pill-glow"></div>
+          <div class="card-spotlight"></div>
+          <div class="pill-inner pill-inner--health">
+            <div class="pill-content">
+              <div class="pill-top-row pill-top-row--split">
+                <span class="pill-health-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="soon-badge-inline">
+                  <span class="soon-badge-dot"></span>
+                  En desarrollo
+                </span>
+              </div>
+              <h3 class="pill-headline pill-headline--health"><strong>Tap In</strong><br /><em>Health</em></h3>
+              <p class="pill-desc">
+                Bienestar escolar, pronto.
+              </p>
+            </div>
+
+            <div class="pill-mockup pill-mockup--health" data-anim="mockup">
+              <div class="health-soon">
+                <div class="health-soon-pulse"></div>
+                <div class="health-soon-pulse health-soon-pulse--2"></div>
+                <div class="health-soon-pulse health-soon-pulse--3"></div>
+                <svg class="health-soon-heart" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span class="health-soon-eta">Próximamente</span>
+            </div>
+
+            <span class="health-keep-posted">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 8a6 6 0 1112 0c0 4 2 5 2 7H4c0-2 2-3 2-7zM10 20a2 2 0 004 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Mantente al tanto
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="vs-note">
+        <span>¿Cómo se compara Tap In con OrderEat, Kimche o Chub.Ai?</span>
+        <button class="vs-toggle" id="vsToggle" aria-expanded="false" aria-controls="vsTable">
+          <span class="vs-toggle-label">Ver comparación</span>
+          <svg class="vs-toggle-chevron" width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="vs-table" id="vsTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Plataforma</th>
+              <th>Casino</th>
+              <th>Transporte</th>
+              <th>Eventos</th>
+              <th>Comunicaciones</th>
+              <th>Dashboard</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="vs-row--highlight">
+              <td><strong>Tap In Connect</strong></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td>OrderEat</td>
+              <td class="check">✓</td>
+              <td class="cross">—</td>
+              <td class="cross">—</td>
+              <td class="cross">—</td>
+              <td class="cross">—</td>
+            </tr>
+            <tr>
+              <td>Chub.Ai</td>
+              <td class="cross">—</td>
+              <td class="check">✓</td>
+              <td class="cross">—</td>
+              <td class="cross">—</td>
+              <td class="cross">—</td>
+            </tr>
+            <tr>
+              <td>Kimche</td>
+              <td class="cross">—</td>
+              <td class="cross">—</td>
+              <td class="cross">—</td>
+              <td class="check">✓</td>
+              <td class="cross">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- /.dark-canvas -->
+
+  <!-- ═══════════════════════════════════════════
+       LIGHT REGION — single continuous white surface
+       wrapping como, beneficios, social, objeciones
+       so there are no per-section bg seams between them.
+  ════════════════════════════════════════════ -->
+  <div class="bg-light-stack">
+
+  <!-- ═══════════════════════════════════════════
+       CÓMO FUNCIONA
+  ════════════════════════════════════════════ -->
+  <section class="section-como" id="como-funciona" data-scroll="center">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-kicker">Cómo funciona</span>
+        <h2 class="section-title">Tres actores. Una plataforma.<br /><em class="hl">Cero fricción.</em></h2>
+        <p class="como-sub">Tres roles, un mismo sistema. Elige el tuyo y mira cómo opera el día a día.</p>
+      </div>
+
+      <!-- ═══ STAGE — dark panel housing personas + flow + mockup ═══ -->
+      <div class="como-stage" data-active="colegio">
+        <!-- Background depth -->
+        <div class="stage-bg">
+          <div class="stage-orb stage-orb--1"></div>
+          <div class="stage-orb stage-orb--2"></div>
+          <div class="stage-orb stage-orb--3"></div>
+          <div class="stage-grid"></div>
+          <div class="stage-noise"></div>
+        </div>
+
+        <!-- ─── Persona selector ─── -->
+        <div class="como-personas" role="tablist" aria-label="Selecciona tu rol">
+          <button class="como-persona active" data-persona="colegio" role="tab" aria-selected="true">
+            <span class="persona-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 21V10l9-6 9 6v11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 21v-7h6v7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 21h18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span class="persona-name">Colegio</span>
+            <span class="persona-progress" aria-hidden="true"><span class="persona-progress-fill"></span></span>
+          </button>
+
+          <button class="como-persona" data-persona="cpa" role="tab" aria-selected="false">
+            <span class="persona-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7"/>
+                <circle cx="17" cy="9" r="2.4" stroke="currentColor" stroke-width="1.7"/>
+                <path d="M3 20c.6-3.3 3-5 6-5s5.4 1.7 6 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 20c.4-2.4 2-3.5 4-3.5s3.4 1.1 3.8 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="persona-name">Centro de Padres</span>
+            <span class="persona-progress" aria-hidden="true"><span class="persona-progress-fill"></span></span>
+          </button>
+
+          <button class="como-persona" data-persona="apoderado" role="tab" aria-selected="false">
+            <span class="persona-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 21v-1a4 4 0 014-4h6a4 4 0 014 4v1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.7"/>
+              </svg>
+            </span>
+            <span class="persona-name">Apoderado</span>
+            <span class="persona-progress" aria-hidden="true"><span class="persona-progress-fill"></span></span>
+          </button>
+        </div>
+
+        <!-- ─── Panels (one per persona, 4 steps each + mockup) ─── -->
+        <div class="como-panels">
+
+          <!-- ═══ COLEGIO ═══ -->
+          <div class="como-panel active" data-panel="colegio">
+            <div class="panel-flow">
+              <span class="panel-role">Colegio · Decide e implementa</span>
+              <h3 class="panel-headline">De la decisión al despliegue, en una semana.</h3>
+
+              <ol class="steps-list">
+                <li class="step active" data-step="1">
+                  <span class="step-num"><span class="step-num-inner">01</span></span>
+                  <div class="step-body">
+                    <h4>Un único contrato</h4>
+                    <p>Un solo acuerdo cubre toda la plataforma. Sin negociar con tres proveedores distintos.</p>
+                  </div>
+                </li>
+                <li class="step" data-step="2">
+                  <span class="step-num"><span class="step-num-inner">02</span></span>
+                  <div class="step-body">
+                    <h4>Configuración llave en mano</h4>
+                    <p>Integramos casino, transporte y sistemas existentes. Cero carga técnica para el colegio.</p>
+                  </div>
+                </li>
+                <li class="step" data-step="3">
+                  <span class="step-num"><span class="step-num-inner">03</span></span>
+                  <div class="step-body">
+                    <h4>En marcha en 3 a 5 días</h4>
+                    <p>Validamos los flujos con el equipo y capacitamos a quien lo necesite.</p>
+                  </div>
+                </li>
+                <li class="step" data-step="4">
+                  <span class="step-num"><span class="step-num-inner">04</span></span>
+                  <div class="step-body">
+                    <h4>Dashboard institucional en vivo</h4>
+                    <p>Consumos, ingresos y operación en tiempo real, todos los días.</p>
+                  </div>
+                </li>
+                <span class="steps-rail" aria-hidden="true"><span class="steps-rail-fill"></span></span>
+              </ol>
+            </div>
+
+            <div class="panel-stage">
+              <div class="device device--browser">
+                <div class="browser-bar">
+                  <span class="browser-dots"><i></i><i></i><i></i></span>
+                  <span class="browser-url">app.tapin.cl<span class="browser-url-faint"> · panel directivo</span></span>
+                </div>
+                <div class="browser-body">
+
+                  <!-- Screen 1 — Contrato firmado -->
+                  <div class="screen screen--contract active" data-screen="1">
+                    <div class="contract-card">
+                      <div class="contract-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 14l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </div>
+                      <strong>Contrato Tap In · Firmado</strong>
+                      <span>1 acuerdo · 3 productos activados</span>
+                      <div class="contract-modules">
+                        <span class="cm-pill cm-pill--on">Connect</span>
+                        <span class="cm-pill cm-pill--on">Campus</span>
+                        <span class="cm-pill cm-pill--off">Health · pronto</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Screen 2 — Setup en vivo -->
+                  <div class="screen screen--setup" data-screen="2">
+                    <div class="setup-grid">
+                      <div class="setup-item setup-item--done">
+                        <span class="setup-tick"><svg width="10" height="10" viewBox="0 0 16 16"><path d="M2 8l5 5L14 3" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span>Casino integrado</span>
+                      </div>
+                      <div class="setup-item setup-item--done">
+                        <span class="setup-tick"><svg width="10" height="10" viewBox="0 0 16 16"><path d="M2 8l5 5L14 3" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span>Transporte vinculado</span>
+                      </div>
+                      <div class="setup-item setup-item--loading">
+                        <span class="setup-spin"></span>
+                        <span>Importando alumnos · 1.247</span>
+                      </div>
+                      <div class="setup-item">
+                        <span class="setup-tick setup-tick--idle"></span>
+                        <span>Pasarela de pago</span>
+                      </div>
+                    </div>
+                    <div class="setup-bar">
+                      <span class="setup-bar-label">Configuración</span>
+                      <span class="setup-bar-track"><span class="setup-bar-fill"></span></span>
+                      <span class="setup-bar-pct">68%</span>
+                    </div>
+                  </div>
+
+                  <!-- Screen 3 — Día 4 / 5 -->
+                  <div class="screen screen--days" data-screen="3">
+                    <div class="days-counter">
+                      <span class="days-big">4<small>/5</small></span>
+                      <span class="days-label">días desde la firma</span>
+                    </div>
+                    <ul class="days-checklist">
+                      <li class="dl-on">Equipo directivo capacitado</li>
+                      <li class="dl-on">Concesionario integrado</li>
+                      <li class="dl-on">Piloto con apoderados OK</li>
+                      <li class="dl-now">Lanzamiento mañana <span class="dl-pulse"></span></li>
+                    </ul>
+                  </div>
+
+                  <!-- Screen 4 — Dashboard en vivo -->
+                  <div class="screen screen--dash" data-screen="4">
+                    <div class="dash-kpis">
+                      <div class="dash-kpi">
+                        <span class="dk-num">138</span>
+                        <span class="dk-label">tickets hoy</span>
+                        <span class="dk-trend dk-trend--up">+12%</span>
+                      </div>
+                      <div class="dash-kpi">
+                        <span class="dk-num">$1.2M</span>
+                        <span class="dk-label">recaudado</span>
+                        <span class="dk-trend dk-trend--up">+8%</span>
+                      </div>
+                      <div class="dash-kpi">
+                        <span class="dk-num">28</span>
+                        <span class="dk-label">rutas activas</span>
+                        <span class="dk-trend dk-trend--neutral">100%</span>
+                      </div>
+                    </div>
+                    <div class="dash-chart" aria-hidden="true">
+                      <span class="dash-chart-title">Movimientos · últimas 2 semanas</span>
+                      <svg viewBox="0 0 220 70" preserveAspectRatio="none" class="dash-chart-svg">
+                        <defs>
+                          <linearGradient id="dashG" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#9B8EF0" stop-opacity=".7"/>
+                            <stop offset="100%" stop-color="#4A3CAE" stop-opacity="0"/>
+                          </linearGradient>
+                        </defs>
+                        <path d="M0 55 L22 48 L44 50 L66 38 L88 42 L110 30 L132 36 L154 22 L176 28 L198 16 L220 22 L220 70 L0 70 Z" fill="url(#dashG)"/>
+                        <path d="M0 55 L22 48 L44 50 L66 38 L88 42 L110 30 L132 36 L154 22 L176 28 L198 16 L220 22" stroke="#C5BBFA" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <div class="dash-live"><span class="dash-live-dot"></span>en vivo</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ═══ CPA ═══ -->
+          <div class="como-panel" data-panel="cpa">
+            <div class="panel-flow">
+              <span class="panel-role">Centro de Padres · Motor de adopción</span>
+              <h3 class="panel-headline">De la planilla manual a la gestión digital, sin curva de aprendizaje.</h3>
+
+              <ol class="steps-list">
+                <li class="step active" data-step="1">
+                  <span class="step-num"><span class="step-num-inner">01</span></span>
+                  <div class="step-body">
+                    <h4>Panel exclusivo del CPA</h4>
+                    <p>La directiva tiene credenciales propias para gestionar todo lo del centro de padres.</p>
+                  </div>
+                </li>
+                <li class="step" data-step="2">
+                  <span class="step-num"><span class="step-num-inner">02</span></span>
+                  <div class="step-body">
+                    <h4>Colectas digitales</h4>
+                    <p>Cuotas, viajes, eventos. Cobro directo desde la app del apoderado.</p>
+                  </div>
+                </li>
+                <li class="step" data-step="3">
+                  <span class="step-num"><span class="step-num-inner">03</span></span>
+                  <div class="step-body">
+                    <h4>Comunicación sin WhatsApp</h4>
+                    <p>Avisos, recordatorios y novedades llegan al apoderado correcto, en su app.</p>
+                  </div>
+                </li>
+                <li class="step" data-step="4">
+                  <span class="step-num"><span class="step-num-inner">04</span></span>
+                  <div class="step-body">
+                    <h4>Rendiciones mensuales automáticas</h4>
+                    <p>Trazabilidad total. Cada peso entra y sale con respaldo digital.</p>
+                  </div>
+                </li>
+                <span class="steps-rail" aria-hidden="true"><span class="steps-rail-fill"></span></span>
+              </ol>
+            </div>
+
+            <div class="panel-stage">
+              <div class="device device--browser">
+                <div class="browser-bar">
+                  <span class="browser-dots"><i></i><i></i><i></i></span>
+                  <span class="browser-url">app.tapin.cl<span class="browser-url-faint"> · panel CPA</span></span>
+                </div>
+                <div class="browser-body">
+
+                  <!-- Screen 1 — Acceso CPA -->
+                  <div class="screen screen--access active" data-screen="1">
+                    <div class="access-header">
+                      <div class="access-avatar">CP</div>
+                      <div class="access-text">
+                        <strong>Hola, directiva</strong>
+                        <span>CPA · Colegio Mariano de Schönstatt</span>
+                      </div>
+                      <span class="access-badge">CPA</span>
+                    </div>
+                    <div class="access-tiles">
+                      <div class="access-tile"><span class="at-num">$4.2M</span><span class="at-lbl">caja activa</span></div>
+                      <div class="access-tile"><span class="at-num">312</span><span class="at-lbl">apoderados</span></div>
+                      <div class="access-tile"><span class="at-num">3</span><span class="at-lbl">colectas vivas</span></div>
+                    </div>
+                  </div>
+
+                  <!-- Screen 2 — Colecta en vivo -->
+                  <div class="screen screen--colecta" data-screen="2">
+                    <div class="colecta-card">
+                      <div class="colecta-head">
+                        <div>
+                          <strong>Viaje de estudios · 4° medio</strong>
+                          <span>Cuota 2 de 4 · vence 30 abr</span>
+                        </div>
+                        <span class="colecta-tag">en curso</span>
+                      </div>
+                      <div class="colecta-bar">
+                        <span class="colecta-bar-track"><span class="colecta-bar-fill"></span></span>
+                        <div class="colecta-bar-meta">
+                          <span><strong>$2.840.000</strong> de $6.000.000</span>
+                          <span>47%</span>
+                        </div>
+                      </div>
+                      <div class="colecta-rows">
+                        <div class="colecta-row">
+                          <span class="cr-dot cr-dot--ok"></span>
+                          <span>Familia Soto · pagó $30.000</span>
+                          <span class="cr-time">hace 2 min</span>
+                        </div>
+                        <div class="colecta-row">
+                          <span class="cr-dot cr-dot--ok"></span>
+                          <span>Familia Reyes · pagó $30.000</span>
+                          <span class="cr-time">hace 11 min</span>
+                        </div>
+                        <div class="colecta-row">
+                          <span class="cr-dot cr-dot--wait"></span>
+                          <span>Familia Vidal · pendiente</span>
+                          <span class="cr-time">recordatorio</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Screen 3 — Comunicado -->
+                  <div class="screen screen--comm" data-screen="3">
+                    <div class="comm-card">
+                      <div class="comm-head">
+                        <span class="comm-icon">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/></svg>
+                        </span>
+                        <strong>Nuevo comunicado</strong>
+                        <span class="comm-time">listo para enviar</span>
+                      </div>
+                      <div class="comm-subject">Asunto · Reunión de apoderados — sala 4°B</div>
+                      <div class="comm-body-text">
+                        Estimadas familias, los esperamos el martes 12 a las 18:00 en la sala 4°B…
+                      </div>
+                      <div class="comm-audience">
+                        <span class="comm-aud-pill">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21a8 8 0 0116 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                          Apoderados 4°B · 32
+                        </span>
+                        <span class="comm-aud-pill">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9l9 5 9-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                          Email + push
+                        </span>
+                      </div>
+                      <div class="comm-send">Enviar ahora</div>
+                    </div>
+                  </div>
+
+                  <!-- Screen 4 — Rendición mensual -->
+                  <div class="screen screen--report" data-screen="4">
+                    <div class="report-card">
+                      <div class="report-head">
+                        <div>
+                          <strong>Rendición · Marzo 2026</strong>
+                          <span>generada automáticamente · 1 abr</span>
+                        </div>
+                        <span class="report-pdf">PDF</span>
+                      </div>
+                      <div class="report-rows">
+                        <div class="report-row">
+                          <span>Saldo inicial</span><strong>$3.840.000</strong>
+                        </div>
+                        <div class="report-row report-row--in">
+                          <span>+ Ingresos colectas</span><strong>$1.620.000</strong>
+                        </div>
+                        <div class="report-row report-row--out">
+                          <span>− Egresos eventos</span><strong>$1.260.000</strong>
+                        </div>
+                        <div class="report-row report-row--total">
+                          <span>Saldo de cierre</span><strong>$4.200.000</strong>
+                        </div>
+                      </div>
+                      <div class="report-foot">
+                        <span class="report-trace">
+                          <svg width="10" height="10" viewBox="0 0 16 16"><path d="M2 8l5 5L14 3" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                          trazabilidad 100%
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ═══ APODERADO ═══ -->
+          <div class="como-panel" data-panel="apoderado">
+            <div class="panel-flow">
+              <span class="panel-role">Apoderado · Uso diario</span>
+              <h3 class="panel-headline">De la primera descarga al control total, en minutos.</h3>
+
+              <ol class="steps-list">
+                <li class="step active" data-step="1">
+                  <span class="step-num"><span class="step-num-inner">01</span></span>
+                  <div class="step-body">
+                    <h4>Registro con RUT</h4>
+                    <p>Descarga la app, vincula a los hijos y selecciona los servicios. Menos de 2 minutos.</p>
+                  </div>
+                </li>
+                <li class="step" data-step="2">
+                  <span class="step-num"><span class="step-num-inner">02</span></span>
+                  <div class="step-body">
+                    <h4>Recarga de saldo desde el celular</h4>
+                    <p>Webpay, transferencia o tarjeta guardada. El saldo queda disponible al instante.</p>
+                  </div>
+                </li>
+                <li class="step" data-step="3">
+                  <span class="step-num"><span class="step-num-inner">03</span></span>
+                  <div class="step-body">
+                    <h4>Notificaciones en tiempo real</h4>
+                    <p>Cuando el hijo almuerza, sube al bus o entra a un evento, el apoderado recibe el aviso.</p>
+                  </div>
+                </li>
+                <li class="step" data-step="4">
+                  <span class="step-num"><span class="step-num-inner">04</span></span>
+                  <div class="step-body">
+                    <h4>Todo en una sola pantalla</h4>
+                    <p>Historial de consumos, próximos pagos y comunicados, en un solo lugar.</p>
+                  </div>
+                </li>
+                <span class="steps-rail" aria-hidden="true"><span class="steps-rail-fill"></span></span>
+              </ol>
+            </div>
+
+            <div class="panel-stage">
+              <div class="device device--phone">
+                <div class="phone-notch"></div>
+                <div class="phone-body">
+
+                  <!-- Screen 1 — Registro -->
+                  <div class="screen screen--register active" data-screen="1">
+                    <div class="register-top">
+                      <span class="register-logo">tap in</span>
+                      <span class="register-step">Paso 2 de 3</span>
+                    </div>
+                    <h5 class="register-title">Vincula a tu hijo</h5>
+                    <div class="register-field">
+                      <span class="register-field-label">RUT del alumno</span>
+                      <span class="register-field-value">21.842.117-K</span>
+                    </div>
+                    <div class="register-found">
+                      <span class="rf-avatar">SM</span>
+                      <div class="rf-text">
+                        <strong>Sofía Méndez</strong>
+                        <span>4° básico · Colegio Mariano</span>
+                      </div>
+                      <span class="rf-check">
+                        <svg width="10" height="10" viewBox="0 0 16 16"><path d="M2 8l5 5L14 3" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </span>
+                    </div>
+                    <div class="register-cta">Confirmar y continuar</div>
+                  </div>
+
+                  <!-- Screen 2 — Recargar saldo -->
+                  <div class="screen screen--topup" data-screen="2">
+                    <div class="topup-balance">
+                      <span class="topup-balance-label">Saldo Sofía</span>
+                      <span class="topup-balance-num">$24.500</span>
+                      <span class="topup-balance-trend">+$20.000 hoy</span>
+                    </div>
+                    <div class="topup-amounts">
+                      <span class="topup-chip">$10k</span>
+                      <span class="topup-chip topup-chip--on">$20k</span>
+                      <span class="topup-chip">$50k</span>
+                    </div>
+                    <div class="topup-method">
+                      <span class="topup-method-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.6"/></svg>
+                      </span>
+                      <span>Visa ··· 4421</span>
+                      <span class="topup-method-arrow">›</span>
+                    </div>
+                    <div class="topup-cta">Recargar $20.000</div>
+                  </div>
+
+                  <!-- Screen 3 — Notificación push -->
+                  <div class="screen screen--notif" data-screen="3">
+                    <div class="notif-time">14:34</div>
+                    <div class="notif-date">martes 12 de marzo</div>
+                    <div class="notif-card">
+                      <div class="notif-card-head">
+                        <span class="notif-card-icon">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <span class="notif-card-app">tap in</span>
+                        <span class="notif-card-time">ahora</span>
+                      </div>
+                      <strong class="notif-card-title">Sofía almorzó hoy</strong>
+                      <span class="notif-card-sub">Casino · 12:34 · Menú del día</span>
+                    </div>
+                    <div class="notif-card notif-card--mini">
+                      <div class="notif-card-head">
+                        <span class="notif-card-icon">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="13" rx="3" stroke="currentColor" stroke-width="1.6"/></svg>
+                        </span>
+                        <span class="notif-card-app">tap in</span>
+                        <span class="notif-card-time">8m</span>
+                      </div>
+                      <strong class="notif-card-title">Bus 3 llegó al colegio</strong>
+                    </div>
+                  </div>
+
+                  <!-- Screen 4 — Feed de actividad -->
+                  <div class="screen screen--feed" data-screen="4">
+                    <div class="feed-head">
+                      <span class="feed-avatar">SM</span>
+                      <div class="feed-text">
+                        <strong>Sofía Méndez</strong>
+                        <span>Hoy · 4 movimientos</span>
+                      </div>
+                    </div>
+                    <div class="feed-rows">
+                      <div class="feed-row">
+                        <span class="fr-icon fr-icon--food"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M3 12h18M6 6v12M12 4v16M18 6v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+                        <div class="fr-text"><strong>Almuerzo</strong><span>casino · 12:34</span></div>
+                        <span class="fr-amount">−$3.500</span>
+                      </div>
+                      <div class="feed-row">
+                        <span class="fr-icon fr-icon--bus"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="13" rx="3" stroke="currentColor" stroke-width="1.8"/></svg></span>
+                        <div class="fr-text"><strong>Bus 3 llegada</strong><span>colegio · 7:42</span></div>
+                        <span class="fr-amount fr-amount--ok">on time</span>
+                      </div>
+                      <div class="feed-row">
+                        <span class="fr-icon fr-icon--event"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.8"/></svg></span>
+                        <div class="fr-text"><strong>Reunión 4°B</strong><span>mar 12 · 18:00</span></div>
+                        <span class="fr-amount fr-amount--soft">próxima</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Footnote callout (kept) -->
+      <div class="como-nota card-section">
+        <div class="nota-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" fill="currentColor"/></svg>
+        </div>
+        <p><strong>Nos encargamos de la formalización con concesionarios y transportistas.</strong> Para ellos, Tap In es más eficiente — no más difícil. La implementación toma días, no meses.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       BENEFICIOS
+  ════════════════════════════════════════════ -->
+  <section class="section-beneficios" id="beneficios">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-kicker">Lo que ganas</span>
+        <h2 class="section-title">Más eficiencia. Más confianza.<br /><em class="hl">Sin trabajo extra.</em></h2>
+        <p class="ganancias-sub">Seis cambios concretos en la operación diaria. Pasa el cursor por cada uno para ver el detalle.</p>
+      </div>
+
+      <!-- ═══ ESCENA — sobre el fondo blanco, sin bloque contenedor.
+           Grid 3 cols × 3 filas: orbs distribuidos a izquierda y derecha,
+           wordmark con ondas en el centro. Panel de descripción debajo. ═══ -->
+      <div class="ganancias-scene" id="gananciasStage">
+        <!-- Blooms ambient sutiles para que las pills glass tengan color que refractar -->
+        <div class="gan-bloom gan-bloom--1" aria-hidden="true"></div>
+        <div class="gan-bloom gan-bloom--2" aria-hidden="true"></div>
+
+        <!-- Wordmark + ondas en el centro -->
+        <div class="gan-core" aria-hidden="true">
+          <div class="gan-wave gan-wave--1"></div>
+          <div class="gan-wave gan-wave--2"></div>
+          <div class="gan-wave gan-wave--3"></div>
+          <div class="gan-wave gan-wave--4"></div>
+          <div class="gan-wave gan-wave--5"></div>
+          <div class="gan-halo"></div>
+          <button type="button" class="gan-wordmark" id="gananciasCore" aria-label="Reproducir cascada">
+            <svg viewBox="0 0 389.87 150.6" aria-hidden="true">
+              <g fill="currentColor">
+                <rect x="262.57" y="35.52" width="29.99" height="80.23"/>
+                <path d="M389.87,78.96c0-23.99-19.37-43.44-43.28-43.44-6.68,0-13,1.52-18.64,4.23v-4.23h-29.99v80.23h29.99v-36.73h.08c.75-8.15,7.57-14.52,15.89-14.52s15.13,6.38,15.89,14.52h.08v36.73h29.99v-36.65h0s0-.09,0-.14Z"/>
+                <path d="M108.81,35.52v3.81c-5.86-3.29-12.61-5.17-19.79-5.17-22.44,0-40.64,18.26-40.64,40.79s18.19,40.79,40.64,40.79c7.19,0,13.94-1.88,19.79-5.17v5.17h29.84V35.52h-29.84ZM108.8,76.8c-.2,8.74-7.32,15.77-16.07,15.77s-16.08-7.23-16.08-16.14,7.2-16.14,16.08-16.14c8.23,0,15.01,6.21,15.96,14.21h.12v2.31h0Z"/>
+                <rect x="262.57" y="0" width="29.99" height="30.11" rx="12.55" ry="12.55"/>
+                <path d="M40.67,87.8c-5.84,0-10.58-4.75-10.58-10.62h.03v-12.91h14.7v-30.1h-14.7V14H.14v20.17h-.14v30.1l.02,12.91C.02,99.72,18.22,117.99,40.67,117.99c1.4,0,2.78-.07,4.15-.21v-30.83c-1.27.55-2.67.85-4.15.85Z"/>
+                <path d="M193.83,34.17c-7.19,0-13.94,1.88-19.79,5.17v-3.81h-29.84v115.08h29.84v-40.01c5.86,3.29,12.61,5.17,19.79,5.17,22.44,0,40.64-18.26,40.64-40.79s-18.19-40.79-40.64-40.79ZM190.12,92.57c-8.76,0-15.87-7.03-16.07-15.77h0v-2.31h.04v.87c.55-8.42,7.52-15.07,16.04-15.07s16.08,7.23,16.08,16.14-7.2,16.14-16.08,16.14Z"/>
+              </g>
+            </svg>
+          </button>
+        </div>
+
+        <!-- 6 ganancias en corona — posiciones absolutas, ring index para cascada -->
+        <button class="gan-orb gan-orb--1" data-orb="0" data-ring="2"
+                aria-describedby="ganDetailBody">
+          <span class="gan-orb-ico" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2.5"/><path d="M2 10h20"/><path d="M6 15h4"/></svg>
+          </span>
+          <span class="gan-orb-meta">
+            <span class="gan-orb-title">Cero papel ni efectivo</span>
+            <span class="gan-orb-stat"><strong>100%</strong> digital</span>
+          </span>
+        </button>
+
+        <button class="gan-orb gan-orb--2" data-orb="1" data-ring="2"
+                aria-describedby="ganDetailBody">
+          <span class="gan-orb-ico" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
+          </span>
+          <span class="gan-orb-meta">
+            <span class="gan-orb-title">Conciliación automática</span>
+            <span class="gan-orb-stat"><strong>0</strong> planillas</span>
+          </span>
+        </button>
+
+        <button class="gan-orb gan-orb--3" data-orb="2" data-ring="1"
+                aria-describedby="ganDetailBody">
+          <span class="gan-orb-ico" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M10 21a2 2 0 0 0 4 0"/></svg>
+          </span>
+          <span class="gan-orb-meta">
+            <span class="gan-orb-title">Notificaciones en vivo</span>
+            <span class="gan-orb-stat"><strong>al instante</strong></span>
+          </span>
+        </button>
+
+        <button class="gan-orb gan-orb--4" data-orb="3" data-ring="1"
+                aria-describedby="ganDetailBody">
+          <span class="gan-orb-ico" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 4 4 5-7"/></svg>
+          </span>
+          <span class="gan-orb-meta">
+            <span class="gan-orb-title">Dashboard institucional</span>
+            <span class="gan-orb-stat"><strong>1</strong> panel para todo</span>
+          </span>
+        </button>
+
+        <button class="gan-orb gan-orb--5" data-orb="4" data-ring="3"
+                aria-describedby="ganDetailBody">
+          <span class="gan-orb-ico" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <span class="gan-orb-meta">
+            <span class="gan-orb-title">Proveedores formalizados</span>
+            <span class="gan-orb-stat"><strong>todos</strong> integrados</span>
+          </span>
+        </button>
+
+        <button class="gan-orb gan-orb--6" data-orb="5" data-ring="3"
+                aria-describedby="ganDetailBody">
+          <span class="gan-orb-ico" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 14l2 2 4-4"/></svg>
+          </span>
+          <span class="gan-orb-meta">
+            <span class="gan-orb-title">Un solo contrato</span>
+            <span class="gan-orb-stat"><strong>1</strong> acuerdo</span>
+          </span>
+        </button>
+
+      </div>
+
+      <!-- Panel de descripción — fuera de la escena, en su propia franja -->
+      <div class="gan-detail" id="ganDetail" aria-live="polite">
+        <span class="gan-detail-tag" id="ganDetailTag">pagos</span>
+        <p class="gan-detail-body" id="ganDetailBody">Todos los pagos viajan digitales: casino, transporte, eventos. Sin transferencias sueltas, sin sobres.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SOCIAL PROOF
+  ════════════════════════════════════════════ -->
+  <section class="section-social" id="colegios" data-scroll="center">
+    <!-- Animated background — palette-only blooms + slow conic sweep +
+         flowing horizontal dashed "data streams" that suggest motion of
+         transactions through the system. -->
+    <div class="colegios-bg" aria-hidden="true">
+      <div class="colegios-grid-pattern"></div>
+      <div class="colegios-conic"></div>
+      <div class="colegios-bloom colegios-bloom--1"></div>
+      <div class="colegios-bloom colegios-bloom--2"></div>
+      <div class="colegios-bloom colegios-bloom--3"></div>
+
+      <!-- Constellation network — nodos con líneas conectándolos sugieren
+           "comunidad de colegios conectados a Tap In". Algunos nodos pulsan
+           para dar sensación de actividad real (no decoración estática). -->
+      <svg class="colegios-constellation" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <radialGradient id="cnst-node" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#9B8EF0" stop-opacity=".95"/>
+            <stop offset="60%" stop-color="#6B5CE7" stop-opacity=".5"/>
+            <stop offset="100%" stop-color="#4A3CAE" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="cnst-link" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#9B8EF0" stop-opacity="0"/>
+            <stop offset="50%" stop-color="#9B8EF0" stop-opacity=".5"/>
+            <stop offset="100%" stop-color="#9B8EF0" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <g class="cnst-links" stroke="url(#cnst-link)" stroke-width="1" fill="none">
+          <line x1="120" y1="180" x2="320" y2="120"/>
+          <line x1="320" y1="120" x2="540" y2="220"/>
+          <line x1="540" y1="220" x2="780" y2="140"/>
+          <line x1="780" y1="140" x2="1020" y2="240"/>
+          <line x1="1020" y1="240" x2="1280" y2="160"/>
+          <line x1="120" y1="180" x2="240" y2="380"/>
+          <line x1="240" y1="380" x2="540" y2="220"/>
+          <line x1="540" y1="220" x2="640" y2="500"/>
+          <line x1="780" y1="140" x2="900" y2="420"/>
+          <line x1="900" y1="420" x2="1020" y2="240"/>
+          <line x1="900" y1="420" x2="1180" y2="560"/>
+          <line x1="640" y1="500" x2="900" y2="420"/>
+          <line x1="240" y1="380" x2="440" y2="640"/>
+          <line x1="440" y1="640" x2="640" y2="500"/>
+          <line x1="640" y1="500" x2="820" y2="720"/>
+          <line x1="820" y1="720" x2="1180" y2="560"/>
+          <line x1="1180" y1="560" x2="1320" y2="780"/>
+        </g>
+        <g class="cnst-nodes">
+          <circle class="cnst-n cnst-n--lg pulse-1" cx="120" cy="180" r="6" fill="url(#cnst-node)"/>
+          <circle class="cnst-n" cx="320" cy="120" r="3" fill="#9B8EF0"/>
+          <circle class="cnst-n cnst-n--lg pulse-2" cx="540" cy="220" r="5" fill="url(#cnst-node)"/>
+          <circle class="cnst-n" cx="780" cy="140" r="3" fill="#9B8EF0"/>
+          <circle class="cnst-n cnst-n--lg pulse-3" cx="1020" cy="240" r="6" fill="url(#cnst-node)"/>
+          <circle class="cnst-n" cx="1280" cy="160" r="3" fill="#9B8EF0"/>
+          <circle class="cnst-n" cx="240" cy="380" r="3" fill="#9B8EF0"/>
+          <circle class="cnst-n cnst-n--lg pulse-2" cx="640" cy="500" r="5" fill="url(#cnst-node)"/>
+          <circle class="cnst-n cnst-n--lg pulse-1" cx="900" cy="420" r="6" fill="url(#cnst-node)"/>
+          <circle class="cnst-n" cx="440" cy="640" r="3" fill="#9B8EF0"/>
+          <circle class="cnst-n" cx="820" cy="720" r="3" fill="#9B8EF0"/>
+          <circle class="cnst-n cnst-n--lg pulse-3" cx="1180" cy="560" r="5" fill="url(#cnst-node)"/>
+          <circle class="cnst-n" cx="1320" cy="780" r="3" fill="#9B8EF0"/>
+        </g>
+      </svg>
+
+      <!-- Floating particles — pequeños puntos morados que ascienden lentamente,
+           dan sensación de "actividad viva" sin ser invasivo. -->
+      <div class="colegios-particles">
+        <span class="cp" style="--x:8%;  --d:18s; --delay:0s"></span>
+        <span class="cp" style="--x:18%; --d:24s; --delay:-6s"></span>
+        <span class="cp" style="--x:28%; --d:20s; --delay:-12s"></span>
+        <span class="cp" style="--x:42%; --d:26s; --delay:-3s"></span>
+        <span class="cp" style="--x:56%; --d:22s; --delay:-9s"></span>
+        <span class="cp" style="--x:68%; --d:28s; --delay:-15s"></span>
+        <span class="cp" style="--x:78%; --d:21s; --delay:-2s"></span>
+        <span class="cp" style="--x:88%; --d:25s; --delay:-7s"></span>
+      </div>
+
+      <svg class="colegios-streams" viewBox="0 0 1440 800" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="stream-fade" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#6B5CE7" stop-opacity="0"/>
+            <stop offset="50%" stop-color="#6B5CE7" stop-opacity=".7"/>
+            <stop offset="100%" stop-color="#6B5CE7" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="stream-fade-2" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#9B8EF0" stop-opacity="0"/>
+            <stop offset="50%" stop-color="#9B8EF0" stop-opacity=".55"/>
+            <stop offset="100%" stop-color="#9B8EF0" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <path class="cs cs--1" d="M -100 120 Q 360 90 720 130 T 1540 110" fill="none" stroke="url(#stream-fade)" stroke-width="1.4" stroke-dasharray="6 8"/>
+        <path class="cs cs--2" d="M -100 280 Q 320 320 720 270 T 1540 290" fill="none" stroke="url(#stream-fade-2)" stroke-width="1.2" stroke-dasharray="4 10"/>
+        <path class="cs cs--3" d="M -100 460 Q 440 410 720 470 T 1540 440" fill="none" stroke="url(#stream-fade)" stroke-width="1.6" stroke-dasharray="8 6"/>
+        <path class="cs cs--4" d="M -100 620 Q 380 660 720 600 T 1540 640" fill="none" stroke="url(#stream-fade-2)" stroke-width="1.2" stroke-dasharray="3 12"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-kicker">
+          <span class="kicker-dot"></span>
+          Funcionando hoy en colegios chilenos
+        </span>
+        <h2 class="section-title">Esto no es una promesa.<br /><span class="hl">Está pasando.</span></h2>
+        <p class="section-body" style="max-width:560px;margin:0 auto;">
+          Tap In ya procesa pagos, transporte y comunicación en colegios reales.
+          Los datos crecen mes a mes — sin slides, sin promesas.
+        </p>
+      </div>
+
+      <!-- Testimonios carrusel — primero en el flujo: la voz humana real
+           es lo más persuasivo. Cada card incluye el logo del colegio del
+           autor para reforzar la prueba social en una segunda capa visual. -->
+      <div class="testi-carousel" data-active="0">
+        <button class="testi-arrow testi-arrow--prev" type="button" aria-label="Testimonio anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="testi-arrow testi-arrow--next" type="button" aria-label="Testimonio siguiente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+
+        <div class="testi-viewport" aria-live="polite">
+          <div class="testi-track">
+            <article class="testi-card" data-testi="0">
+              <div class="testi-watermark" aria-hidden="true"><img src="img/logo_colegio_mariano.svg" alt="" /></div>
+              <span class="testi-quote-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v3a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V9a2 2 0 0 0 0-2zM21 7h-4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v3a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V9a2 2 0 0 0 0-2z"/></svg>
+              </span>
+              <div class="testi-stars" aria-label="5 de 5 estrellas">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p class="testi-text">
+                Con Tap In los apoderados <strong>dejaron de preguntarnos por cada recarga</strong>.
+                Todo lo ven <strong>directamente en la app</strong>. Nos quitó
+                <strong>una carga enorme</strong> de encima al equipo.
+              </p>
+              <div class="testi-author">
+                <div class="testi-avatar">AM</div>
+                <div class="testi-meta">
+                  <strong>Andrea Muñoz</strong>
+                  <span>Encargada de casino</span>
+                  <span class="testi-school">Mariano de Schönstatt</span>
+                </div>
+                <div class="testi-school-logo" aria-hidden="true">
+                  <img src="img/logo_colegio_mariano.svg" alt="" loading="lazy" decoding="async" />
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-card" data-testi="1">
+              <div class="testi-watermark" aria-hidden="true"><img src="img/logo_colegio_johnandrews.svg" alt="" /></div>
+              <span class="testi-quote-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v3a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V9a2 2 0 0 0 0-2zM21 7h-4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v3a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V9a2 2 0 0 0 0-2z"/></svg>
+              </span>
+              <div class="testi-stars" aria-label="5 de 5 estrellas">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p class="testi-text">
+                Probamos <strong>otras 3 plataformas antes</strong>. Tap In fue
+                <strong>la única que entendió</strong> que cada colegio opera
+                distinto. Se adaptaron a <strong>nuestros tiempos</strong>.
+              </p>
+              <div class="testi-author">
+                <div class="testi-avatar">RS</div>
+                <div class="testi-meta">
+                  <strong>Roberto Silva</strong>
+                  <span>Director administrativo</span>
+                  <span class="testi-school">Colegio John Andrews</span>
+                </div>
+                <div class="testi-school-logo" aria-hidden="true">
+                  <img src="img/logo_colegio_johnandrews.svg" alt="" loading="lazy" decoding="async" />
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-card" data-testi="2">
+              <div class="testi-watermark" aria-hidden="true"><img src="img/logo_colegio_manquehue.svg" alt="" /></div>
+              <span class="testi-quote-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v3a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V9a2 2 0 0 0 0-2zM21 7h-4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v3a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V9a2 2 0 0 0 0-2z"/></svg>
+              </span>
+              <div class="testi-stars" aria-label="5 de 5 estrellas">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p class="testi-text">
+                Lo lanzamos un lunes. El miércoles ya teníamos al
+                <strong>80% de los apoderados usándolo</strong>. La adopción
+                <strong>nos sorprendió incluso a nosotros</strong>.
+              </p>
+              <div class="testi-author">
+                <div class="testi-avatar">MP</div>
+                <div class="testi-meta">
+                  <strong>María Pérez</strong>
+                  <span>Subdirectora académica</span>
+                  <span class="testi-school">Colegio Manquehue</span>
+                </div>
+                <div class="testi-school-logo" aria-hidden="true">
+                  <img src="img/logo_colegio_manquehue.svg" alt="" loading="lazy" decoding="async" />
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-card" data-testi="3">
+              <div class="testi-watermark" aria-hidden="true"><img src="img/logo_colegio_saintdominic.svg" alt="" /></div>
+              <span class="testi-quote-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v3a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V9a2 2 0 0 0 0-2zM21 7h-4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v3a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V9a2 2 0 0 0 0-2z"/></svg>
+              </span>
+              <div class="testi-stars" aria-label="5 de 5 estrellas">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p class="testi-text">
+                <strong>Cero filas en el casino</strong> y los apoderados saben
+                exactamente <strong>qué comió su hijo cada día</strong>. El sistema
+                <strong>simplemente funciona</strong>.
+              </p>
+              <div class="testi-author">
+                <div class="testi-avatar">JL</div>
+                <div class="testi-meta">
+                  <strong>Javier López</strong>
+                  <span>Encargado operaciones</span>
+                  <span class="testi-school">Colegio Saint Dominic</span>
+                </div>
+                <div class="testi-school-logo" aria-hidden="true">
+                  <img src="img/logo_colegio_saintdominic.svg" alt="" loading="lazy" decoding="async" />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="testi-dots" role="tablist" aria-label="Paginación de testimonios">
+          <button class="testi-dot is-active" type="button" data-dot="0" aria-label="Ir al grupo 1"></button>
+          <button class="testi-dot" type="button" data-dot="1" aria-label="Ir al grupo 2"></button>
+          <button class="testi-dot" type="button" data-dot="2" aria-label="Ir al grupo 3"></button>
+        </div>
+      </div>
+
+      <!-- Moments — 3 fotos en orden cronológico real (am → pm).
+           Cards interactivas: el caption base muestra hora + título + bajada.
+           Al click ("Ver más") aparece dentro de la propia foto un panel
+           expandido con una historia más larga, sin sacar al usuario del
+           contexto visual. Sin border morado: la card respira sobre la
+           fotografía, no compite con ella. -->
+      <div class="moments" role="list" aria-label="Un día real con Tap In">
+        <article class="moment" role="listitem" data-moment="0">
+          <div class="moment-photo">
+            <img src="img/moment-director.webp" alt="Director del colegio revisando el dashboard de Tap In en su laptop" loading="lazy" decoding="async" />
+            <span class="moment-overlay"></span>
+            <div class="moment-extra" aria-hidden="true">
+              <span class="moment-extra-tag">Caso real</span>
+              <p>Antes le tomaba <strong>3 horas armar el reporte mensual</strong> de casino. Ahora abre el dashboard, ve los movimientos al día y exporta el cuadre en un click. <strong>Cero Excel, cero ida y vuelta con el concesionario.</strong></p>
+            </div>
+          </div>
+          <div class="moment-caption">
+            <span class="moment-time"><span class="moment-time-dot" aria-hidden="true"></span>8:15 am</span>
+            <strong>El director ve el reporte de ayer</strong>
+            <span>todo cuadra. Sin Excel. Sin armar nada.</span>
+            <button class="moment-toggle" type="button" aria-expanded="false" aria-label="Ver más de este momento">
+              <span class="moment-toggle-text" data-text-open="Ver más" data-text-close="Cerrar">Ver más</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10"/><path d="M3 8h10"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="moment" role="listitem" data-moment="1">
+          <div class="moment-photo">
+            <img src="img/moment-apoderada.webp" alt="Apoderada revisando los almuerzos en su teléfono" loading="lazy" decoding="async" />
+            <span class="moment-overlay"></span>
+            <div class="moment-extra" aria-hidden="true">
+              <span class="moment-extra-tag">Caso real</span>
+              <p>Camila es contadora y trabaja todo el día. Antes <strong>llamaba al colegio para preguntar qué comió Sofía</strong>. Hoy lo ve desde el celular en menos de 10 segundos, ajusta el saldo si necesita, y sigue con su día.</p>
+            </div>
+          </div>
+          <div class="moment-caption">
+            <span class="moment-time"><span class="moment-time-dot" aria-hidden="true"></span>12:34 pm</span>
+            <strong>Camila revisa los almuerzos de Sofía</strong>
+            <span>desde el móvil del trabajo, en tres taps.</span>
+            <button class="moment-toggle" type="button" aria-expanded="false" aria-label="Ver más de este momento">
+              <span class="moment-toggle-text" data-text-open="Ver más" data-text-close="Cerrar">Ver más</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10"/><path d="M3 8h10"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="moment" role="listitem" data-moment="2">
+          <div class="moment-photo">
+            <img src="img/moment-casino.webp" alt="Estudiante pasando por el scanner del casino del colegio" loading="lazy" decoding="async" />
+            <span class="moment-overlay"></span>
+            <div class="moment-extra" aria-hidden="true">
+              <span class="moment-extra-tag">Caso real</span>
+              <p>El casino procesa <strong>+800 almuerzos en 25 minutos</strong>. Sin filas, sin efectivo, sin tickets de papel. Cada consumo se descuenta de la cuenta del apoderado y queda registrado al instante en la app — y en el dashboard del colegio.</p>
+            </div>
+          </div>
+          <div class="moment-caption">
+            <span class="moment-time"><span class="moment-time-dot" aria-hidden="true"></span>13:02 pm</span>
+            <strong>Sofía pasa por el casino</strong>
+            <span>la cuenta de su mamá se descuenta sola.</span>
+            <button class="moment-toggle" type="button" aria-expanded="false" aria-label="Ver más de este momento">
+              <span class="moment-toggle-text" data-text-open="Ver más" data-text-close="Cerrar">Ver más</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10"/><path d="M3 8h10"/></svg>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Stats Live Board — Dark scoreboard que destaca contra el fondo
+           claro de la sección. Cada métrica es una "estación" interactiva
+           con su propia visualización rica (line chart, user grid, uptime
+           heatmap). Active state se rota automáticamente cada 5s pero el
+           usuario puede fijarlo con click. -->
+      <div class="stats-board" aria-label="Tap In Live Board — datos reales de operación">
+        <div class="sb-bg" aria-hidden="true">
+          <div class="sb-bg-grid"></div>
+          <div class="sb-bg-glow sb-bg-glow--1"></div>
+        </div>
+
+        <header class="sb-head">
+          <span class="sb-tag">
+            <span class="sb-pulse" aria-hidden="true"></span>
+            Tap In · operación en vivo
+          </span>
+        </header>
+
+        <div class="sb-grid" role="tablist">
+          <!-- Estación 1 — Transacciones con line chart grande -->
+          <button class="sb-stat is-active" type="button" role="tab" data-sb="0" data-stat-order="0" aria-selected="true" aria-label="Más de 50 mil transacciones procesadas al mes, creciendo 12%">
+            <div class="sb-stat-head">
+              <span class="sb-stat-id">01 / Volumen</span>
+            </div>
+
+            <div class="sb-stat-num" data-count-to="50" data-count-suffix="K+">
+              <span class="stat-num-value">50</span><span class="stat-num-suffix">K+</span>
+            </div>
+            <div class="sb-stat-label">
+              <strong>transacciones procesadas</strong>
+              <span>pagos · recargas · consumos · transporte</span>
+            </div>
+
+            <!-- Visualización principal: line chart grande con área fill,
+                 puntos por mes y tooltip del último valor -->
+            <div class="sb-viz sb-viz--line">
+              <svg viewBox="0 0 320 110" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="sb-line-fill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#9B8EF0" stop-opacity=".55"/>
+                    <stop offset="100%" stop-color="#6B5CE7" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="sb-line-stroke" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#C4B5FD"/>
+                    <stop offset="100%" stop-color="#9B8EF0"/>
+                  </linearGradient>
+                </defs>
+                <!-- Area fill -->
+                <path class="sb-line-area" d="M0,90 L40,82 L80,76 L120,68 L160,55 L200,48 L240,38 L280,28 L320,18 L320,110 L0,110 Z"
+                      fill="url(#sb-line-fill)"/>
+                <!-- Stroke -->
+                <polyline class="sb-line-stroke" points="0,90 40,82 80,76 120,68 160,55 200,48 240,38 280,28 320,18"
+                          fill="none" stroke="url(#sb-line-stroke)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Point markers -->
+                <g class="sb-line-points">
+                  <circle cx="0" cy="90" r="2.5" fill="#9B8EF0"/>
+                  <circle cx="40" cy="82" r="2.5" fill="#9B8EF0"/>
+                  <circle cx="80" cy="76" r="2.5" fill="#9B8EF0"/>
+                  <circle cx="120" cy="68" r="2.5" fill="#9B8EF0"/>
+                  <circle cx="160" cy="55" r="2.5" fill="#9B8EF0"/>
+                  <circle cx="200" cy="48" r="2.5" fill="#9B8EF0"/>
+                  <circle cx="240" cy="38" r="2.5" fill="#9B8EF0"/>
+                  <circle cx="280" cy="28" r="2.5" fill="#9B8EF0"/>
+                </g>
+                <!-- Latest highlight -->
+                <circle class="sb-line-latest" cx="320" cy="18" r="5" fill="#C4B5FD"/>
+                <circle class="sb-line-latest-pulse" cx="320" cy="18" r="11" fill="#C4B5FD" opacity=".25"/>
+              </svg>
+            </div>
+          </button>
+
+          <!-- Estación 2 — Apoderados con grid de avatares -->
+          <button class="sb-stat" type="button" role="tab" data-sb="1" data-stat-order="1" aria-selected="false" tabindex="-1" aria-label="Más de 3 mil apoderados usando la app, con 94% de retención">
+            <div class="sb-stat-head">
+              <span class="sb-stat-id">02 / Comunidad</span>
+            </div>
+
+            <div class="sb-stat-num" data-count-to="3" data-count-suffix="K+">
+              <span class="stat-num-value">3</span><span class="stat-num-suffix">K+</span>
+            </div>
+            <div class="sb-stat-label">
+              <strong>apoderados activos</strong>
+              <span>conectados a sus colegios · cada semana</span>
+            </div>
+
+            <!-- Visualización principal: grid de "user dots" — cada punto
+                 representa un cohort de apoderados activos -->
+            <div class="sb-viz sb-viz--grid" aria-hidden="true">
+              <div class="sb-user-grid"></div>
+            </div>
+          </button>
+
+          <!-- Estación 3 — Implementación: dato accionable que persuade
+               a directivos. "En menos de una semana lo tenés andando".
+               Viz: timeline horizontal con 4 hitos del proceso. -->
+          <button class="sb-stat" type="button" role="tab" data-sb="2" data-stat-order="2" aria-selected="false" tabindex="-1" aria-label="Implementación llave en mano en menos de 7 días en promedio">
+            <div class="sb-stat-head">
+              <span class="sb-stat-id">03 / Implementación</span>
+            </div>
+
+            <div class="sb-stat-num" data-count-to="7" data-count-suffix=" días">
+              <span class="sb-num-prefix">≤</span><span class="stat-num-value">7</span><span class="stat-num-suffix">días</span>
+            </div>
+            <div class="sb-stat-label">
+              <strong>de la firma al primer pago</strong>
+              <span>integración con casino y transporte incluida</span>
+            </div>
+
+            <!-- Visualización: timeline horizontal con 4 hitos del proceso
+                 de onboarding. Línea de progreso animada al activarse. -->
+            <div class="sb-viz sb-viz--timeline" aria-hidden="true">
+              <div class="sb-timeline">
+                <span class="sb-tl-track"><span class="sb-tl-progress"></span></span>
+                <ol class="sb-tl-steps">
+                  <li class="sb-tl-step">
+                    <span class="sb-tl-dot"></span>
+                    <span class="sb-tl-day">D 1</span>
+                    <span class="sb-tl-name">Kick-off</span>
+                  </li>
+                  <li class="sb-tl-step">
+                    <span class="sb-tl-dot"></span>
+                    <span class="sb-tl-day">D 2-4</span>
+                    <span class="sb-tl-name">Setup</span>
+                  </li>
+                  <li class="sb-tl-step">
+                    <span class="sb-tl-dot"></span>
+                    <span class="sb-tl-day">D 5-6</span>
+                    <span class="sb-tl-name">Capacitación</span>
+                  </li>
+                  <li class="sb-tl-step is-final">
+                    <span class="sb-tl-dot"></span>
+                    <span class="sb-tl-day">D 7</span>
+                    <span class="sb-tl-name">Live</span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </button>
+        </div>
+
+        <footer class="sb-foot">
+          <div class="sb-foot-info">
+            <span class="sb-foot-mark" aria-hidden="true"></span>
+            <span class="sb-foot-text"><strong>8 colegios</strong> en operación · Chile · 2025</span>
+          </div>
+        </footer>
+      </div>
+
+      <!-- Logo marquee — partners actuales en loop infinito. Las dos copias
+           hacen el efecto seamless (cuando la primera scrollea fuera, la
+           segunda toma su lugar sin saltos). -->
+      <div class="partners">
+        <span class="partners-label">Ya confían en Tap In</span>
+        <div class="partners-marquee">
+          <div class="partners-track">
+            <span class="partner-item" data-name="Colegio Mariano de Schönstatt"><img src="img/logo_colegio_mariano.svg" alt="Colegio Mariano de Schönstatt" /></span>
+            <span class="partner-item" data-name="Colegio John Andrews"><img src="img/logo_colegio_johnandrews.svg" alt="Colegio John Andrews" /></span>
+            <span class="partner-item" data-name="Colegio Manquehue"><img src="img/logo_colegio_manquehue.svg" alt="Colegio Manquehue" /></span>
+            <span class="partner-item" data-name="Colegio Saint Dominic"><img src="img/logo_colegio_saintdominic.svg" alt="Saint Dominic" /></span>
+            <span class="partner-item" data-name="Colegio Los Alerces"><img src="img/logo_colegio_losalerces.svg" alt="Colegio Los Alerces" /></span>
+            <span class="partner-item" data-name="Colegio Huinganal"><img src="img/logo_colegio_huinganal.svg" alt="Colegio Huinganal" /></span>
+            <span class="partner-item" data-name="Universidad Católica"><img src="img/logo_uc.svg" alt="Universidad Católica" /></span>
+            <span class="partner-item" data-name="Duoc UC"><img src="img/logo_duoc.svg" alt="Duoc UC" /></span>
+            <!-- Duplicado para loop seamless -->
+            <span class="partner-item" data-name="Colegio Mariano de Schönstatt" aria-hidden="true"><img src="img/logo_colegio_mariano.svg" alt="" /></span>
+            <span class="partner-item" data-name="Colegio John Andrews" aria-hidden="true"><img src="img/logo_colegio_johnandrews.svg" alt="" /></span>
+            <span class="partner-item" data-name="Colegio Manquehue" aria-hidden="true"><img src="img/logo_colegio_manquehue.svg" alt="" /></span>
+            <span class="partner-item" data-name="Colegio Saint Dominic" aria-hidden="true"><img src="img/logo_colegio_saintdominic.svg" alt="" /></span>
+            <span class="partner-item" data-name="Colegio Los Alerces" aria-hidden="true"><img src="img/logo_colegio_losalerces.svg" alt="" /></span>
+            <span class="partner-item" data-name="Colegio Huinganal" aria-hidden="true"><img src="img/logo_colegio_huinganal.svg" alt="" /></span>
+            <span class="partner-item" data-name="Universidad Católica" aria-hidden="true"><img src="img/logo_uc.svg" alt="" /></span>
+            <span class="partner-item" data-name="Duoc UC" aria-hidden="true"><img src="img/logo_duoc.svg" alt="" /></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       OBJECIONES
+  ════════════════════════════════════════════ -->
+  <section class="section-objeciones" id="objeciones">
+    <div class="faq-bg" aria-hidden="true">
+      <!-- Orbital rings — círculos concéntricos finos en el costado izquierdo,
+           sugieren "preguntas que orbitan alrededor de la decisión". Animan
+           con un drift muy lento y un pulse independiente por anillo. -->
+      <svg class="faq-orbits" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <defs>
+          <radialGradient id="faq-orb-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#9B8EF0" stop-opacity=".25"/>
+            <stop offset="70%" stop-color="#6B5CE7" stop-opacity=".05"/>
+            <stop offset="100%" stop-color="#4A3CAE" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <circle class="faq-orb-glow" cx="300" cy="300" r="280" fill="url(#faq-orb-glow)"/>
+        <circle class="faq-orb-ring fo-r1" cx="300" cy="300" r="80"  fill="none" stroke="rgba(107,92,231,.22)" stroke-width="1"/>
+        <circle class="faq-orb-ring fo-r2" cx="300" cy="300" r="140" fill="none" stroke="rgba(107,92,231,.18)" stroke-width="1" stroke-dasharray="2 6"/>
+        <circle class="faq-orb-ring fo-r3" cx="300" cy="300" r="200" fill="none" stroke="rgba(107,92,231,.14)" stroke-width="1"/>
+        <circle class="faq-orb-ring fo-r4" cx="300" cy="300" r="260" fill="none" stroke="rgba(107,92,231,.10)" stroke-width="1" stroke-dasharray="1 8"/>
+        <!-- Satellite dots that travel along the rings -->
+        <circle class="faq-orb-sat fo-s1" r="3.5" fill="#6B5CE7"/>
+        <circle class="faq-orb-sat fo-s2" r="2.5" fill="#9B8EF0"/>
+        <circle class="faq-orb-sat fo-s3" r="3" fill="#6B5CE7"/>
+      </svg>
+
+      <!-- Topographic curves — "curvas de nivel" estilizadas en el costado
+           derecho. Pasan suavemente por el eje horizontal con drift sutil. -->
+      <svg class="faq-topo" viewBox="0 0 600 600" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="faq-topo-line" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#9B8EF0" stop-opacity="0"/>
+            <stop offset="50%" stop-color="#9B8EF0" stop-opacity=".35"/>
+            <stop offset="100%" stop-color="#9B8EF0" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#faq-topo-line)" stroke-width="1">
+          <path class="ftc ftc--1" d="M 0 80 Q 200 60 400 90 T 800 70"/>
+          <path class="ftc ftc--2" d="M 0 140 Q 220 120 420 150 T 820 130"/>
+          <path class="ftc ftc--3" d="M 0 210 Q 240 180 460 220 T 840 200"/>
+          <path class="ftc ftc--4" d="M 0 290 Q 220 260 440 300 T 820 280"/>
+          <path class="ftc ftc--5" d="M 0 380 Q 240 350 460 390 T 840 370"/>
+          <path class="ftc ftc--6" d="M 0 470 Q 220 440 440 480 T 820 460"/>
+        </g>
+      </svg>
+
+      <!-- Floating question glyph — un signo de pregunta etéreo, MUY
+           translúcido, en la zona superior central. Sirve de motif
+           atmosférico que conecta el background con el tema (preguntas)
+           sin gritar. -->
+      <div class="faq-glyph" aria-hidden="true">
+        <svg viewBox="0 0 120 160">
+          <path d="M 30 50 Q 30 20 60 20 Q 90 20 90 50 Q 90 70 70 80 Q 60 86 60 100" fill="none" stroke="rgba(155,142,240,.10)" stroke-width="14" stroke-linecap="round"/>
+          <circle cx="60" cy="130" r="8" fill="rgba(155,142,240,.10)"/>
+        </svg>
+      </div>
+
+      <div class="faq-grid"></div>
+      <div class="faq-scan"></div>
+      <div class="ambient-blob ambient-blob--1"></div>
+      <div class="ambient-blob ambient-blob--2"></div>
+    </div>
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-kicker">Preguntas frecuentes</span>
+        <h2 class="section-title">Las dudas que tienen<br />los directivos antes de decidir.</h2>
+      </div>
+
+      <div class="faq-layout">
+        <div class="faq-aura" aria-hidden="true"></div>
+
+        <div class="faq-questions" role="tablist" aria-orientation="vertical">
+          <span class="faq-highlight" aria-hidden="true"></span>
+
+          <button class="faq-q is-active" type="button" data-faq="0" role="tab" aria-selected="true" id="faq-q-0" aria-controls="faq-panel-0" tabindex="0">
+            <span class="q-num">01</span>
+            <span class="q-text">¿Tap In maneja datos biométricos de los alumnos?</span>
+            <span class="q-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+            </span>
+          </button>
+
+          <button class="faq-q" type="button" data-faq="1" role="tab" aria-selected="false" id="faq-q-1" aria-controls="faq-panel-1" tabindex="-1">
+            <span class="q-num">02</span>
+            <span class="q-text">¿Cómo sé que realmente va a funcionar en mi colegio?</span>
+            <span class="q-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+            </span>
+          </button>
+
+          <button class="faq-q" type="button" data-faq="2" role="tab" aria-selected="false" id="faq-q-2" aria-controls="faq-panel-2" tabindex="-1">
+            <span class="q-num">03</span>
+            <span class="q-text">¿Quién tiene que hacer el trabajo de implementar esto?</span>
+            <span class="q-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+            </span>
+          </button>
+        </div>
+
+        <div class="faq-panels">
+          <div class="faq-panel is-active" data-faq="0" role="tabpanel" id="faq-panel-0" aria-labelledby="faq-q-0" tabindex="0">
+            <span class="panel-tag">Privacidad</span>
+            <p>No. El sistema opera sobre datos mínimos: el RUT del alumno y la cuenta del apoderado. No requiere huella digital ni reconocimiento facial. La validación de consumos se hace por ticket digital — los datos críticos del colegio no se exponen.</p>
+          </div>
+          <div class="faq-panel" data-faq="1" role="tabpanel" id="faq-panel-1" aria-labelledby="faq-q-1" tabindex="0">
+            <span class="panel-tag">Resultados</span>
+            <p>Ya funciona en colegios que lo empezaron a usar para el casino y hoy lo usan para más servicios. En la demo te mostramos el sistema en vivo, adaptado al tamaño y contexto específico de tu institución. Sin compromisos, sin letra chica.</p>
+          </div>
+          <div class="faq-panel" data-faq="2" role="tabpanel" id="faq-panel-2" aria-labelledby="faq-q-2" tabindex="0">
+            <span class="panel-tag">Implementación</span>
+            <p>Nuestro equipo. Nos encargamos de la integración con concesionarios y proveedores de transporte. El colegio no necesita hacer ningún trabajo técnico. La implementación completa toma días, no meses, y siempre con alguien de nuestro lado acompañando el proceso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- /.bg-light-stack -->
+
+  <!-- ═══════════════════════════════════════════
+       DARK REGION (bottom) — single continuous dark
+       surface wrapping contacto + footer so there's no
+       seam between them either.
+  ════════════════════════════════════════════ -->
+  <div class="bg-dark-stack">
+
+  <!-- ═══════════════════════════════════════════
+       FORMULARIO / CTA CIERRE
+  ════════════════════════════════════════════ -->
+  <section class="section-contacto" id="contacto">
+    <div class="contacto-bg">
+      <div class="contacto-orb contacto-orb--1"></div>
+      <div class="contacto-orb contacto-orb--2"></div>
+      <div class="contacto-grid"></div>
+    </div>
+    <div class="container">
+      <div class="contacto-inner">
+        <div class="contacto-left">
+          <span class="section-kicker kicker-light">
+            <span class="kicker-dot"></span> Demo gratuita
+          </span>
+          <h2 class="contacto-title">¿Quieres ver Tap In<br />en tu colegio?</h2>
+          <p class="contacto-subhead">
+            30 minutos. Sin compromiso. Te mostramos el sistema en vivo,
+            adaptado a tu institución.
+          </p>
+
+          <ol class="contacto-steps">
+            <li class="contacto-step">
+              <span class="step-num">01</span>
+              <div class="step-body">
+                <strong>Cuéntanos sobre tu colegio</strong>
+                <span>Te respondemos en menos de 24 horas hábiles.</span>
+              </div>
+            </li>
+            <li class="contacto-step">
+              <span class="step-num">02</span>
+              <div class="step-body">
+                <strong>Demo personalizada de 30 min</strong>
+                <span>Vía Google Meet, sin presentaciones genéricas.</span>
+              </div>
+            </li>
+            <li class="contacto-step">
+              <span class="step-num">03</span>
+              <div class="step-body">
+                <strong>Decides a tu ritmo</strong>
+                <span>Sin contratos forzados ni costos ocultos.</span>
+              </div>
+            </li>
+          </ol>
+
+          <div class="contacto-trust">
+            <div class="trust-item">
+              <span class="trust-check" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5L13 5"/></svg>
+              </span>
+              Sin compromisos
+            </div>
+            <div class="trust-item">
+              <span class="trust-check" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5L13 5"/></svg>
+              </span>
+              Respuesta en menos de 24 horas
+            </div>
+            <div class="trust-item">
+              <span class="trust-check" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5L13 5"/></svg>
+              </span>
+              Tu información es confidencial
+            </div>
+          </div>
+        </div>
+
+        <div class="contacto-right">
+          <div class="form-card">
+            <div class="form-card-glow" aria-hidden="true"></div>
+            <div class="form-card-corner form-card-corner--tl" aria-hidden="true"></div>
+            <div class="form-card-corner form-card-corner--br" aria-hidden="true"></div>
+
+            <div class="form-card-header">
+              <span class="form-badge">
+                <span class="form-badge-pulse" aria-hidden="true"></span>
+                Cupos disponibles esta semana
+              </span>
+              <h3 class="form-card-title">Reserva tu demo</h3>
+              <p class="form-card-sub">Toma 1 minuto. Te respondemos hoy.</p>
+            </div>
+
+            <form class="demo-form"
+                  id="demoForm"
+                  action="https://formsubmit.co/ajax/agus.avendano@gmail.com"
+                  method="POST"
+                  novalidate>
+              <!-- FormSubmit meta fields -->
+              <input type="hidden" name="_subject" value="Nueva solicitud de demo · Tap In Landing">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+              <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <div class="input-wrap">
+                  <span class="input-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+                  </span>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Correo institucional</label>
+                <div class="input-wrap">
+                  <span class="input-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></svg>
+                  </span>
+                  <input type="email" id="email" name="email" placeholder="director@colegio.cl" autocomplete="email" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="colegio">Nombre del colegio</label>
+                <div class="input-wrap">
+                  <span class="input-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/><path d="M9 21v-6h6v6"/><path d="M10 11h0M14 11h0"/></svg>
+                  </span>
+                  <input type="text" id="colegio" name="colegio" placeholder="Colegio XYZ" autocomplete="organization" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="cargoTrigger">Cargo</label>
+                <div class="custom-select" id="cargoSelect" data-placeholder="Selecciona tu cargo">
+                  <button type="button"
+                          class="custom-select-trigger"
+                          id="cargoTrigger"
+                          aria-haspopup="listbox"
+                          aria-expanded="false"
+                          aria-labelledby="cargoTrigger">
+                    <span class="input-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg>
+                    </span>
+                    <span class="custom-select-value">Selecciona tu cargo</span>
+                    <span class="input-chevron" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </span>
+                  </button>
+                  <ul class="custom-select-options" role="listbox" aria-labelledby="cargoTrigger" tabindex="-1">
+                    <li class="custom-select-option" role="option" data-value="Director/a" tabindex="-1">
+                      <span class="option-text">Director/a</span>
+                      <span class="option-check" aria-hidden="true">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5L13 5"/></svg>
+                      </span>
+                    </li>
+                    <li class="custom-select-option" role="option" data-value="Encargado/a administrativo/a" tabindex="-1">
+                      <span class="option-text">Encargado/a administrativo/a</span>
+                      <span class="option-check" aria-hidden="true">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5L13 5"/></svg>
+                      </span>
+                    </li>
+                    <li class="custom-select-option" role="option" data-value="Presidente/a del Centro de Padres" tabindex="-1">
+                      <span class="option-text">Presidente/a del Centro de Padres</span>
+                      <span class="option-check" aria-hidden="true">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5L13 5"/></svg>
+                      </span>
+                    </li>
+                    <li class="custom-select-option" role="option" data-value="Otro" tabindex="-1">
+                      <span class="option-text">Otro</span>
+                      <span class="option-check" aria-hidden="true">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5L13 5"/></svg>
+                      </span>
+                    </li>
+                  </ul>
+                  <input type="hidden" id="cargo" name="cargo" required value="">
+                </div>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                <span class="btn-submit-shine" aria-hidden="true"></span>
+                <span class="btn-submit-label">Quiero ver la demo</span>
+                <span class="btn-submit-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+                </span>
+                <span class="btn-submit-spinner" aria-hidden="true"></span>
+              </button>
+
+              <p class="form-error" id="formError" role="alert" aria-live="polite">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+                <span class="form-error-text">Hubo un problema enviando el formulario. Inténtalo de nuevo.</span>
+              </p>
+
+              <p class="form-micro">
+                <svg class="form-micro-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                Tu información viaja cifrada. No la compartimos.
+              </p>
+            </form>
+
+            <div class="form-success" id="formSuccess" aria-live="polite">
+              <div class="success-icon" aria-hidden="true">
+                <svg class="success-svg" viewBox="0 0 64 64">
+                  <circle class="success-circle" cx="32" cy="32" r="28"/>
+                  <path class="success-check" d="M19 33 l9 9 l17 -18"/>
+                </svg>
+              </div>
+              <h3>¡Listo! Te contactamos pronto.</h3>
+              <p>Recibirás un correo de confirmación en los próximos minutos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-bg" aria-hidden="true">
+      <div class="footer-dots"></div>
+      <div class="footer-divider"></div>
+      <div class="footer-beam"></div>
+      <div class="footer-horizon"></div>
+    </div>
+
+    <div class="container footer-inner">
+      <div class="footer-col footer-col--brand">
+        <a href="#inicio" class="footer-brand" aria-label="Tap In — inicio">
+          <img src="img/wordmark_tapin.svg" alt="tap in" class="footer-wordmark" />
+        </a>
+        <p class="footer-tagline">
+          La plataforma que conecta directores, apoderados, alumnos y colaboradores en un solo ecosistema.
+        </p>
+        <div class="footer-locale">
+          <span class="locale-dot" aria-hidden="true"></span>
+          Hecho en Chile · Operando en LATAM
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading"><span class="heading-accent" aria-hidden="true"></span>Producto</h4>
+        <a class="footer-link" href="#productos">Tap In Connect</a>
+        <a class="footer-link" href="#productos">Tap In Campus</a>
+        <a class="footer-link" href="#productos">Tap In Health</a>
+        <a class="footer-link" href="#como-funciona">Cómo funciona</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading"><span class="heading-accent" aria-hidden="true"></span>Empresa</h4>
+        <a class="footer-link" href="#colegios">Colegios que confían</a>
+        <a class="footer-link" href="#beneficios">Beneficios</a>
+        <a class="footer-link" href="#objeciones">Preguntas frecuentes</a>
+        <a class="footer-link" href="#contacto">Solicitar demo</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading"><span class="heading-accent" aria-hidden="true"></span>Contacto</h4>
+        <a class="footer-link footer-link--icon footer-link--mail" href="/cdn-cgi/l/email-protection#7d1512111c3d091c0d1413531e11">
+          <span class="contact-icon" aria-hidden="true">
+            <svg class="mail-envelope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="M3 7l9 7 9-7"/>
+            </svg>
+            <svg class="mail-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2.5L11.5 12.5"/>
+              <path d="M21.5 2.5L15 21L11.5 12.5L3 8.5L21.5 2.5Z"/>
+            </svg>
+            <svg class="mail-trail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 18 Q 7 14, 12 12"/>
+            </svg>
+          </span>
+          <span class="__cf_email__" data-cfemail="056d6a6964457164756c6b2b6669">[email&#160;protected]</span>
+        </a>
+        <a class="footer-link footer-link--icon footer-link--call" href="#contacto">
+          <span class="contact-icon" aria-hidden="true">
+            <span class="call-pulse" aria-hidden="true"></span>
+            <svg class="call-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2-2h2.5a1 1 0 0 1 .96.71l1.4 4.21a1 1 0 0 1-.5 1.21l-2.36 1.18a13 13 0 0 0 6.69 6.69l1.18-2.36a1 1 0 0 1 1.21-.5l4.21 1.4a1 1 0 0 1 .71.96V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5z"/></svg>
+          </span>
+          Agenda una llamada
+        </a>
+        <div class="footer-socials">
+          <a class="social-btn" href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.34 18.34H5.67V9.67h2.67v8.67zM7 8.5a1.55 1.55 0 1 1 0-3.1 1.55 1.55 0 0 1 0 3.1zm11.34 9.84h-2.67v-4.21c0-1-.02-2.3-1.4-2.3-1.41 0-1.62 1.1-1.62 2.23v4.28H10v-8.67h2.56v1.18h.04c.36-.68 1.23-1.4 2.53-1.4 2.71 0 3.21 1.78 3.21 4.1v4.79z"/></svg>
+          </a>
+          <a class="social-btn" href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a class="social-btn" href="#" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A10.5 10.5 0 0 0 3.6 16.4L2 22l5.7-1.5a10.5 10.5 0 0 0 12.8-17zM12 19.7c-1.6 0-3.2-.4-4.6-1.3l-.3-.2-3.4.9.9-3.3-.2-.4A8.7 8.7 0 1 1 12 19.7zm5-6.5c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1s-1.2-.4-2.2-1.4c-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2.1 3.1 5 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.6-.6 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.2-.3-.3-.6-.4z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span class="footer-copy">© 2026 Tap In SpA. Todos los derechos reservados.</span>
+        <div class="footer-legal">
+          <a href="#">Términos</a>
+          <span aria-hidden="true">·</span>
+          <a href="#">Privacidad</a>
+          <span aria-hidden="true">·</span>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </div><!-- /.bg-dark-stack (bottom) -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
